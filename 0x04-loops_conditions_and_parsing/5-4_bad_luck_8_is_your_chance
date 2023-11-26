@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#This is a loop that does nothing!
+
+i=0
+k=10
+
+while [ "$i" -lt "$k" ]
+do
+    i=$((i+1))
+    if [ "$i" -eq "4" ]
+    then
+        echo "bad luck"
+    elif [ "$i" -eq "8" ]
+    then
+        echo "good luck"
+    else
+        echo "Best School"
+    fi
+done
