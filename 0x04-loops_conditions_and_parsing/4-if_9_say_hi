@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 #This is a loop that does nothing!
 
-for (( i=0; i<10; i++ ))
+i=0
+k=10
+
+while [ "$i" -lt "$k" ]
 do
     echo "Best School"
-    if [ "$i" -eq "8" ]
+    i=$((i+1))
+    if [ "$i" -eq "9" ]
     then
         echo "Hi"
     fi
