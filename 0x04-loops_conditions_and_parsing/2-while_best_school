@@ -7,5 +7,5 @@ k=10
 while [ "$i" -lt "$k" ]
 do
     echo "Best School"
-    i=$[$i+1]
+    i=$((i+1))
 done
