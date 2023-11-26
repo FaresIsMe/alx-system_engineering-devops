@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#This is a loop that does nothing!
+
+for file in *
+do
+    if [ -f "$file" ]
+    then
+        parts=("${file//-}")
+        echo "${parts[1]}"
+    fi
+done
