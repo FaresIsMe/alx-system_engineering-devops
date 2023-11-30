@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#ip of what is excuted on
+
+ip -4 -o addr show | cut -d "/" -f 1 | awk '{print $4}'
